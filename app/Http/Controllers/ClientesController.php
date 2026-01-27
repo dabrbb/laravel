@@ -141,4 +141,34 @@ class ClientesController extends Controller
 
         return redirect('clientes')->with('mensaje', 'Cliente dorrado.');
     }
+
+    public function exportarCsv()
+    {
+        $fileName = 'clientes.csv';
+
+        $clientes = Clientes::select('nombre', 'direccion', 'email')->get();
+
+        $headers = [
+            "Content-Type" => "text/csv",
+            "Content-Disposition" => "attachment; filename=$fileName",
+        ];
+
+        $callback = function () use ($clientes) {
+            $file = fopen('php://output', 'w');
+
+            fputcsv($file, ['Nombre', 'Direccion', 'Email']);
+
+            foreach ($clientes as $cliente) {
+                fputcsv($file, [
+                    $cliente->nombre,
+                    $cliente->direccion,
+                    $cliente->email,
+                ]);
+            }
+
+            fclose($file);
+        };
+
+        return response()->stream($callback, 200, $headers);
+    }
 }

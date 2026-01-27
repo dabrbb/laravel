@@ -29,6 +29,7 @@ Route::get('/clientes', [ClientesController::class, 'index']);
 Route::get('/clientes/create', [ClientesController::class, 'create']);
 Route::get('/clientes/{id}/edit', [ClientesController::class, 'edit']);
 Route::get('/facturas/cliente/{id}', [FacturasController::class, 'facturascliente'])->middleware('auth');
+Route::get('/clientes/exportar', [ClientesController::class, 'exportarCsv'])->name('clientes.exportar');
 Route::post('/clientes', [ClientesController::class, 'store']);
 Route::patch('/clientes/{id}', [ClientesController::class, 'update']);
 Route::resource('clientes', ClientesController::class)->middleware('auth');
