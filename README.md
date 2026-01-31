@@ -1,59 +1,91 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Reto 3.1 – Proyecto colaborativo en Git
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Descripción
+Este proyecto corresponde al **Reto 3.1** de la asignatura, cuyo objetivo es trabajar de forma colaborativa utilizando **Git y GitHub**, aplicando un flujo de trabajo profesional basado en ramas, commits y pull requests.
 
-## About Laravel
+El proyecto está desarrollado con **Laravel** e implementa un CRUD completo (Create, Read, Update, Delete).
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Tecnologías utilizadas
+- PHP 8.x
+- Laravel
+- MySQL
+- Git / GitHub
+- Node.js y Vite
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## Requisitos previos
+Para ejecutar el proyecto es necesario tener instalado:
+- PHP
+- Composer
+- Node.js
+- MySQL
+- XAMPP o entorno similar
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Instalación y ejecución del proyecto
 
-## Laravel Sponsors
+1. Clonar el repositorio:
+```bash
+git clone https://github.com/dabrbb/laravel.git
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+```
+2. Acceder a la carpeta del proyecto:
+```bash
+cd laravel
 
-### Premium Partners
+```
+3. Instalar dependencias de PHP:
+```bash
+composer install
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+```
+4. Crear el archivo de entorno:
+```bash
+cp .env.example .env
 
-## Contributing
+```
+5. Generar la clave de la aplicación:
+```bash
+php artisan key:generate
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+```
+6. Configurar la base de datos en el archivo .env.
 
-## Code of Conduct
+7. Crear la base de datos y ejecutar las migraciones:
+```bash
+php artisan migrate
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+```
+8. Instalar dependencias de frontend:
+```bash
+npm install
 
-## Security Vulnerabilities
+```
+9. Ejecutar el proyecto:
+```bash
+php artisan serve
+npm run dev
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+```
+## Flujo de trabajo colaborativo
+El proyecto se ha desarrollado siguiendo un flujo de trabajo basado en:
+- Rama main para la versión estable
+- Rama dev para el desarrollo
+- Uso de commits descriptivos
+- Creación de Pull Requests para integrar cambios
 
-## License
+## Autor
+- Artem Volodin DAW
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+
+
+
+
+
+
