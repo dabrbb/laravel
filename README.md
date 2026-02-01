@@ -81,7 +81,6 @@ El proyecto se ha desarrollado siguiendo un flujo de trabajo basado en:
 ## Autor
 - Artem Volodin DAW
 
-Hola artem
 
 
 
