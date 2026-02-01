@@ -11,7 +11,6 @@ class Facturas extends Model
     {
         return $this->belongsTo(Clientes::class, 'cliente_id');
     }
-//nuevo commit3
     protected $fillable = [
         'cliente_id',
         'numero',
