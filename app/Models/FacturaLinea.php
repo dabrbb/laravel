@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class FacturaLinea extends Model
 {
     protected $table = 'facturalineas';
-//nuevo commit
+//nuevo commit2
     protected $fillable = [
         'id_factura',
         'codigo',
