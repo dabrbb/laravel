@@ -1,4 +1,4 @@
-# Reto 3.1 – Proyecto colaborativo en Git
+# Reto 3.3 – Proyecto colaborativo en Git
 
 ## Descripción
 Este proyecto corresponde al **Reto 3.1** de la asignatura, cuyo objetivo es trabajar de forma colaborativa utilizando **Git y GitHub**, aplicando un flujo de trabajo profesional basado en ramas, commits y pull requests.
